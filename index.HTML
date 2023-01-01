@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traiter un Formulaire HTML avec PHP</title>
+</head>
+<body>
+    <form action="FOR.PHP" method="post">
+        <fieldset>
+                    <center>
+                        <br>
+                                <input type="text" pattern="[A-Za-z]{3,20}" placeholder=" • Nom" maxlength="20" size=20
+                                    id="nom" name="nom" autocomplete="off" required />
+                            <br>
+
+                        <br>
+                                <input type="email" name="email" placeholder=" • Email" maxlength="20" size=20 />
+                            <br>
+
+                        <br>
+                                <input type="tel" pattern="[0-9]{5,16}" placeholder=" • Numero de Téléphon" name="tel"
+                                    maxlength="16" size="20%">
+                            <br>
+
+                        <br>
+                                <input type="password"  maxlength="6" name="password"
+                                    placeholder="• Mot de passe (3 Lettres et 3 chiffres)" size=20>
+                                    <br> <br>
+
+
+                            <!-- <input type="button" value="Connecter" id="button" onclick="connecter()"> -->
+                            <input type="submit" value="Connecter" name="valider" id="button" >
+
+                        </center>
+                        </fieldset>
+    </form>
+</body>
+</html>
